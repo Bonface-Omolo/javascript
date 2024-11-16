@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objects</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		const product = {
+			name: 'socks',
+			price: 1090
+		};
+		console.log(product);
+		console.log(product.name);
+		console.log(product.price);
+
+		product.name = 'catton socks';
+		console.log(product);
+
+		product.newProperty = true;
+		console.log(product);
+
+		delete product.newProperty;
+		console.log(product);
+
+		*/
+
+	/*	const product2 = {
+			nmae: 'shirt', 
+			'delivaery-time': '1 day',
+			rating: {
+				stars: 4.5,
+				count: 87
+			},
+			fun: function function1() {
+				console.log('function is the object');
+			}
+		};
+		console.log(product2);
+		console.log(product2,name);
+		console.log(product2['name']);
+
+		console.log(product2['delivaery-time']);
+
+		console.log(product2.rating.count);
+		product2.fun();
+
+		console.log(JSON.stringify(product2));
+
+		const Jsonstring = JSON.stringify(product2);
+
+		console.log(JSON.parse(Jsonstring));
+*/
+
+		console.log('Hello'.length);
+		console.log('hello'.toUpperCase());
+
+		const object1 = {
+			message: 'Hello'
+		};
+
+		const object2 = object1;
+
+		object1.message = 'Good Job';
+		console.log(object1);
+		console.log(object2);
+
+		const object3 = {
+			message: 'Good Job'
+
+		}
+		console.log(object3 === object1);
+		console.log(object1 === object2);
+
+
+		const object4 = {
+			message: 'Good Job',
+			price: 799
+
+		};
+
+		//const message =  object4.message
+		const {message} = object4;
+		console.log(message);
+		console.log(price);
+
+		const object5 = {
+			// message:message
+			message
+		};
+
+		console.log(object5);
+
+		method: function function1() {
+			console.log('method');
+		}
+		object5.method();
+	</script>
+
+</body>
+</html>
